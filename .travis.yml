@@ -2,8 +2,12 @@ language: cpp
 compiler:
     - g++
     - c++
+env:
+  - COMPILER: g++
+  - COMPILER: c++
+  - COMPILER: cpp
 
 before_script:
     - echo $CXX
     - ls .
-script: g++ -o vektor main.cpp Vektor.cpp
+script: $COMPILER -o vektor main.cpp Vektor.cpp
