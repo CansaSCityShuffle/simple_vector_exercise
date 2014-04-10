@@ -4,5 +4,6 @@ compiler:
     - c++
 
 before_script:
+    - echo $CXX
     - ls .
 script: g++ -o vektor main.cpp Vektor.cpp
