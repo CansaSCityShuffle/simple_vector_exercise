@@ -1,0 +1,9 @@
+language: cpp
+compiler:
+    - g++
+    - c++
+
+before_script:
+    - echo $compiler
+    - echo $COMPILER
+script: g++ -o vector main.cpp Vector.cpp
