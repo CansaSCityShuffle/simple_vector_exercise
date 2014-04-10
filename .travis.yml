@@ -5,4 +5,4 @@ compiler:
 
 before_script:
     - ls .
-script: g++ -o vector main.cpp Vector.cpp
+script: g++ -o vektor main.cpp Vektor.cpp
